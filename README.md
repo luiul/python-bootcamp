@@ -94,14 +94,12 @@ Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xs
 
 <detail>
 <summary>Why Choose Python?</summary>
-
 - Designed for clear, logical code that is easy to read and learn.
 - Lots of existing libraries and frameworks written in Python allowing users to apply Python to a wide variety of tasks.
 - Focuses on optimizing developer time, rather than a computer's processing time.
 - Great documentation online.
 </detail>
 
--
 <detail>
 <summary>What can you do with Python?</summary>
 - This course first focuses on "base" Python, which consists of the core components of the language and writing scripts and small programs.
@@ -133,7 +131,6 @@ No Install Options
 There are several ways to run Python code. First let's discuss the various options for development environments.
 <detail>
 <summary>There are 3 main types of environments.</summary>
-
 - Text Editors (VS Code)
   - General editors for any text file
   - Work with variety of file types
