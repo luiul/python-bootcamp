@@ -88,7 +88,7 @@ Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xs
   - Advanced Python modules
   - Advanced Python object and data structures
   - Level up your knowledge
-<details>
+</details>
 
 # 2. Introduction
 
@@ -222,4 +222,4 @@ Slicing allows you to grab a subsection of multiple characters, a "slice" of the
 
 ### 3.3.3. Immutability
 
-Continue here!
+Continue here!!!
