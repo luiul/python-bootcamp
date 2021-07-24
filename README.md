@@ -1,10 +1,10 @@
 <!-- omit in toc -->
-# Python 3 Bootcamp
+# 🐍 Python 3 Bootcamp
 
 <!-- omit in toc -->
 ## Description
 
-Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xsc0n-X8CR?usp=sharing). Course [Python 3 notebooks](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp). Older [Python 2 notebooks](https://github.com/jmportilla/Complete-Python-Bootcamp) for reference.
+Learn how to use Python for real-world tasks, such as working with PDF files, sending emails, reading Excel files, Scraping websites for informations, working with image files, and much more. Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xsc0n-X8CR?usp=sharing). Course [Python 3 notebooks](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp). Older [Python 2 notebooks](https://github.com/jmportilla/Complete-Python-Bootcamp) for reference.
 
 <!-- omit in toc -->
 ## Table of Contents
