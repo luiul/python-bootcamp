@@ -9,17 +9,16 @@ Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xs
 <!-- omit in toc -->
 ## Table of Contents
 
-- [1. Overview](#1-overview)
-- [2. Introduction](#2-introduction)
-- [3. Data Types](#3-data-types)
-  - [3.1. Numbers](#31-numbers)
-  - [3.2. Variable Assigments](#32-variable-assigments)
-  - [3.3. Strings](#33-strings)
-    - [3.3.1. Indexing](#331-indexing)
-    - [3.3.2. Slicing](#332-slicing)
-    - [3.3.3. Immutability](#333-immutability)
+- [1. Overview and Introduction](#1-overview-and-introduction)
+- [2. Data Types](#2-data-types)
+  - [2.1. Numbers](#21-numbers)
+  - [2.2. Variable Assigments](#22-variable-assigments)
+  - [2.3. Strings](#23-strings)
+    - [2.3.1. Indexing](#231-indexing)
+    - [2.3.2. Slicing](#232-slicing)
+    - [2.3.3. Immutability](#233-immutability)
 
-# 1. Overview
+# 1. Overview and Introduction
 
 <details>
 <summary>Overview of the course.</summary>
@@ -90,17 +89,15 @@ Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xs
   - Level up your knowledge
 </details>
 
-# 2. Introduction
-
-<detail>
+<details>
 <summary>Why Choose Python?</summary>
 - Designed for clear, logical code that is easy to read and learn.
 - Lots of existing libraries and frameworks written in Python allowing users to apply Python to a wide variety of tasks.
 - Focuses on optimizing developer time, rather than a computer's processing time.
 - Great documentation online.
-</detail>
+</details>
 
-<detail>
+<details>
 <summary>What can you do with Python?</summary>
 - This course first focuses on "base" Python, which consists of the core components of the language and writing scripts and small programs.
 - Later we begin to learn about outside libraries and frameworks that greatly expand Python's capabilities.
@@ -119,7 +116,7 @@ Course [slides](https://drive.google.com/drive/folders/1CKqOQzst1cGURXGiRVivi2Xs
 - Create websites
   - Use web frameworks such as Django and Flask to handle the backend of a website and user data
   - Create interactive dashboards for users
-</detail>
+</details>
 
 No Install Options
 
@@ -129,7 +126,7 @@ No Install Options
 - [Google Collab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index#recent=true)
 
 There are several ways to run Python code. First let's discuss the various options for development environments.
-<detail>
+<details>
 <summary>There are 3 main types of environments.</summary>
 - Text Editors (VS Code)
   - General editors for any text file
@@ -146,9 +143,9 @@ There are several ways to run Python code. First let's discuss the various optio
   - See input and output next to each other.
   - Support in-line markdown notes, visualizations, videos, and more.
   - Special file formats that are not .py
-</detail>
+</details>
 
-# 3. Data Types
+# 2. Data Types
 
 | Name           | Type  | Description                                                       |
 | -------------- | ----- | ----------------------------------------------------------------- |
@@ -161,7 +158,7 @@ There are several ways to run Python code. First let's discuss the various optio
 | Sets           | set   | Unordered collection of unique objects: ("a","b")                 |
 | Booleans       | bool  | Logical value indicating True or False                            |
 
-## 3.1. Numbers
+## 2.1. Numbers
 
 There are two main number types we will work with:
 
@@ -173,7 +170,7 @@ Notes:
 - [Issues and limitations of floating point arithmetic](https://docs.python.org/2/tutorial/floatingpoint.html).
 - [Caret operator](https://stackoverflow.com/questions/2451386/what-does-the-caret-operator-in-python-do)
 
-## 3.2. Variable Assigments
+## 2.2. Variable Assigments
 
 Rules for variable names
 
@@ -192,11 +189,11 @@ Python uses Dynamic Typing. This means you can reassign variables to different d
   - May result in bugs for unexpected data types!
   - You need to be aware of `type()`
 
-## 3.3. Strings
+## 2.3. Strings
 
 Strings are sequences of characters, using the syntax of either single quotes or double quotes.Because strings are **ordered sequences** it means we can using **indexing** and **slicing** to grab sub-sections of the string.
 
-### 3.3.1. Indexing
+### 2.3.1. Indexing
 
 Indexing notation uses `[ ]` notation after the string (or variable assigned the string). Indexing allows you to grab a single character from the string. These actions use `[]` square brackets and a number index to indicate positions of what you wish to grab.
 
@@ -205,7 +202,7 @@ Indexing notation uses `[ ]` notation after the string (or variable assigned the
 | Index:         | 0   | 1   | 2   | 3   | 4   |
 | Reverse Index: | -5  | -4  | -3  | -2  | -1  |
 
-### 3.3.2. Slicing
+### 2.3.2. Slicing
 
 Slicing allows you to grab a subsection of multiple characters, a "slice" of the string. This has the following syntax:
 
@@ -217,6 +214,6 @@ Slicing allows you to grab a subsection of multiple characters, a "slice" of the
 - `stop` is the index you will go up to (but not include).
 - `step` is the size of the "jump" you take.
 
-### 3.3.3. Immutability
+### 2.3.3. Immutability
 
 Continue here!!!
