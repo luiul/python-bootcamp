@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# 🐍 Python 3 Bootcamp
+# 🐍 Python3 Bootcamp
 
 <!-- omit in toc -->
 ## Description
@@ -17,6 +17,13 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
     - [2.3.1. Indexing](#231-indexing)
     - [2.3.2. Slicing](#232-slicing)
     - [2.3.3. Immutability](#233-immutability)
+  - [Lists](#lists)
+  - [Dictionaries](#dictionaries)
+  - [Tuples](#tuples)
+  - [Sets](#sets)
+  - [Booleans](#booleans)
+  - [I/O with Basic Files](#io-with-basic-files)
+  - [Useful Links](#useful-links)
 
 # 1. Overview and Introduction
 
@@ -216,4 +223,52 @@ Slicing allows you to grab a subsection of multiple characters, a "slice" of the
 
 ### 2.3.3. Immutability
 
-Continue here!!!
+String are immutable, i.e. Strings are not mutable! (meaning you can't use indexing to change individual elements of a string). String object does not support item assignment. Once a the characters in the strings are defined, you can not change them. If we want to reassign one of the characters, we have to do it with concatenation. Useful methods for strings:
+
+```python
+str.upper()
+str.lower()
+str.spilt()
+```
+
+[Pyformat](https://pyformat.info/).
+
+## Lists
+
+Lists are ordered sequences that can hold a variety of object types. They use `[]` brackets and commas to separate objects in the list. Lists support indexing and slicing. Lists car be nested and also have a variety of useful methods that can be called off of them. Lists are mutable.
+
+## Dictionaries
+
+Dictionaries are unordered mappings for storing objects. Previously we saw how lists store objects in an ordered sequence, dictionaries use a key-value pairing instead. This key-value pair allows users to quickly grab objects without needing to know an index location.
+
+- Dictionaries: Objects retrieved by key name. Unordered and can not be sorted.
+- Lists: Objects retrieved by location. Ordered Sequence can be indexed or sliced.
+
+## Tuples
+
+Tuples are very similar to lists. However they have one key difference immutability. Once an element is inside a tuple, it can not be reassigned. Tuples use parenthesis: `(1,2,3)`.
+
+## Sets
+
+Sets are unordered collections of unique elements. Meaning there can only be one representative of the same object.
+
+## Booleans
+
+Booleans are operators that allow you to convey `True` or `False` statements. These are very important later on when we deal with **control flow** and **logic**.
+
+## I/O with Basic Files
+
+Reading, Writing, Appending Modes:
+- `mode='r'` is read only
+- `mode='w'` is write only (will overwrite files or create new!)
+- `mode='a'` is append only (will add on to files)
+- `mode='r+'` is reading and writing
+- `mode= 'w+'` is writing and reading (Overwrites existing files or creates new file!)
+
+## Useful Links
+
+- [Best Practice](http://codingbat.com/python)
+- [More Mathematical (and Harder) Practice](https://projecteuler.net/archives)
+- [List of Practice Problems](http://www.codeabbey.com/index/task_list)
+- [A SubReddit Devoted to Daily Practice Problems](https://www.reddit.com/r/dailyprogrammer)
+- [A very tricky website with very few hints and touch problems (Not for beginners but still interesting)](http://www.pythonchallenge.com/)
