@@ -17,13 +17,13 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
     - [2.3.1. Indexing](#231-indexing)
     - [2.3.2. Slicing](#232-slicing)
     - [2.3.3. Immutability](#233-immutability)
-  - [Lists](#lists)
-  - [Dictionaries](#dictionaries)
-  - [Tuples](#tuples)
-  - [Sets](#sets)
-  - [Booleans](#booleans)
-  - [I/O with Basic Files](#io-with-basic-files)
-  - [Useful Links](#useful-links)
+  - [2.4. Lists](#24-lists)
+  - [2.5. Dictionaries](#25-dictionaries)
+  - [2.6. Tuples](#26-tuples)
+  - [2.7. Sets](#27-sets)
+  - [2.8. Booleans](#28-booleans)
+  - [2.9. I/O with Basic Files](#29-io-with-basic-files)
+  - [2.10. Useful Links](#210-useful-links)
 
 # 1. Overview and Introduction
 
@@ -233,30 +233,30 @@ str.spilt()
 
 [Pyformat](https://pyformat.info/).
 
-## Lists
+## 2.4. Lists
 
 Lists are ordered sequences that can hold a variety of object types. They use `[]` brackets and commas to separate objects in the list. Lists support indexing and slicing. Lists car be nested and also have a variety of useful methods that can be called off of them. Lists are mutable.
 
-## Dictionaries
+## 2.5. Dictionaries
 
 Dictionaries are unordered mappings for storing objects. Previously we saw how lists store objects in an ordered sequence, dictionaries use a key-value pairing instead. This key-value pair allows users to quickly grab objects without needing to know an index location.
 
 - Dictionaries: Objects retrieved by key name. Unordered and can not be sorted.
 - Lists: Objects retrieved by location. Ordered Sequence can be indexed or sliced.
 
-## Tuples
+## 2.6. Tuples
 
 Tuples are very similar to lists. However they have one key difference immutability. Once an element is inside a tuple, it can not be reassigned. Tuples use parenthesis: `(1,2,3)`.
 
-## Sets
+## 2.7. Sets
 
 Sets are unordered collections of unique elements. Meaning there can only be one representative of the same object.
 
-## Booleans
+## 2.8. Booleans
 
 Booleans are operators that allow you to convey `True` or `False` statements. These are very important later on when we deal with **control flow** and **logic**.
 
-## I/O with Basic Files
+## 2.9. I/O with Basic Files
 
 Reading, Writing, Appending Modes:
 - `mode='r'` is read only
@@ -265,7 +265,7 @@ Reading, Writing, Appending Modes:
 - `mode='r+'` is reading and writing
 - `mode= 'w+'` is writing and reading (Overwrites existing files or creates new file!)
 
-## Useful Links
+## 2.10. Useful Links
 
 - [Best Practice](http://codingbat.com/python)
 - [More Mathematical (and Harder) Practice](https://projecteuler.net/archives)
