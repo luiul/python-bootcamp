@@ -24,10 +24,10 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [2.8. Booleans](#28-booleans)
   - [2.9. I/O with Basic Files](#29-io-with-basic-files)
   - [2.10. Useful Links](#210-useful-links)
-- [Python Statements](#python-statements)
-  - [If, Elif, Else Statements](#if-elif-else-statements)
-  - [For Loops (and Tuple Unpacking)](#for-loops-and-tuple-unpacking)
-  - [WHile Loop](#while-loop)
+- [3. Python Statements](#3-python-statements)
+  - [3.1. If, Elif, Else Statements](#31-if-elif-else-statements)
+  - [3.2. For Loops (and Tuple Unpacking)](#32-for-loops-and-tuple-unpacking)
+  - [3.3. While Loop](#33-while-loop)
 
 # 1. Overview and Introduction
 
@@ -277,11 +277,11 @@ Reading, Writing, Appending Modes:
 - [A SubReddit Devoted to Daily Practice Problems](https://www.reddit.com/r/dailyprogrammer)
 - [A very tricky website with very few hints and touch problems (Not for beginners but still interesting)](http://www.pythonchallenge.com/)
 
-# Python Statements
+# 3. Python Statements
 
 Let's begin to learn about **control flow** We often only want certain code to execute when a particular condition has been met (condition -> action).
 
-## If, Elif, Else Statements
+## 3.1. If, Elif, Else Statements
 
 To control this flow of logic we use some keywords:
 
@@ -291,7 +291,7 @@ To control this flow of logic we use some keywords:
 
 Control Flow syntax makes use of colons and indentation (whitespace). This indentation system is crucial to Python and is what sets it apart from other programming languages.
 
-## For Loops (and Tuple Unpacking)
+## 3.2. For Loops (and Tuple Unpacking)
 
 Many objects in Python are "iterable", i.e. we can iterate over every element in the object, e.g. every element in a list or every character in a string. We can use `for` loops to execute a block of code for every iteration.
 
@@ -305,7 +305,7 @@ for item_name in my_iterable:
 
 See notebook to read about tuple unpacking.
 
-## WHile Loop
+## 3.3. While Loop
 
 While loops will continue to execute a block of code while some condition remains `True`. For example, while my pool is not full, keep filling my pool with water. Basic syntax:
 
