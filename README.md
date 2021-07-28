@@ -24,6 +24,10 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [2.8. Booleans](#28-booleans)
   - [2.9. I/O with Basic Files](#29-io-with-basic-files)
   - [2.10. Useful Links](#210-useful-links)
+- [Python Statements](#python-statements)
+  - [If, Elif, Else Statements](#if-elif-else-statements)
+  - [For Loops (and Tuple Unpacking)](#for-loops-and-tuple-unpacking)
+  - [WHile Loop](#while-loop)
 
 # 1. Overview and Introduction
 
@@ -272,3 +276,41 @@ Reading, Writing, Appending Modes:
 - [List of Practice Problems](http://www.codeabbey.com/index/task_list)
 - [A SubReddit Devoted to Daily Practice Problems](https://www.reddit.com/r/dailyprogrammer)
 - [A very tricky website with very few hints and touch problems (Not for beginners but still interesting)](http://www.pythonchallenge.com/)
+
+# Python Statements
+
+Let's begin to learn about **control flow** We often only want certain code to execute when a particular condition has been met (condition -> action).
+
+## If, Elif, Else Statements
+
+To control this flow of logic we use some keywords:
+
+- `if`
+- `elif`
+- `else`
+
+Control Flow syntax makes use of colons and indentation (whitespace). This indentation system is crucial to Python and is what sets it apart from other programming languages.
+
+## For Loops (and Tuple Unpacking)
+
+Many objects in Python are "iterable", i.e. we can iterate over every element in the object, e.g. every element in a list or every character in a string. We can use `for` loops to execute a block of code for every iteration.
+
+The term iterable means you can "iterate" over the object, e.g. you can iterate over every character in a string, iterate over every item in a list, iterate over every key in a dictionary. Basic syntax:
+
+```python
+my_iterable = [1,2,3]
+for item_name in my_iterable:
+  do_something(item_name)
+```
+
+See notebook to read about tuple unpacking.
+
+## WHile Loop
+
+While loops will continue to execute a block of code while some condition remains `True`. For example, while my pool is not full, keep filling my pool with water. Basic syntax:
+
+```python
+while bool_cond:
+  # do something
+```
+
