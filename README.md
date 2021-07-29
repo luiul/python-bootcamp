@@ -28,6 +28,9 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [3.1. If, Elif, Else Statements](#31-if-elif-else-statements)
   - [3.2. For Loops (and Tuple Unpacking)](#32-for-loops-and-tuple-unpacking)
   - [3.3. While Loop](#33-while-loop)
+  - [3.4. Useful Operators](#34-useful-operators)
+  - [3.5. List Comprehesion](#35-list-comprehesion)
+- [4. Methods and Functions](#4-methods-and-functions)
 
 # 1. Overview and Introduction
 
@@ -263,6 +266,7 @@ Booleans are operators that allow you to convey `True` or `False` statements. Th
 ## 2.9. I/O with Basic Files
 
 Reading, Writing, Appending Modes:
+
 - `mode='r'` is read only
 - `mode='w'` is write only (will overwrite files or create new!)
 - `mode='a'` is append only (will add on to files)
@@ -307,10 +311,47 @@ See notebook to read about tuple unpacking.
 
 ## 3.3. While Loop
 
-While loops will continue to execute a block of code while some condition remains `True`. For example, while my pool is not full, keep filling my pool with water. Basic syntax:
+While loops will continue to execute a block of code while some condition remains `True`. For example, while my pool is not full, keep filling my pool with water. You can combine with an `else` statement. Basic syntax:
 
 ```python
 while bool_cond:
   # do something
+else:
+  # do something different
 ```
 
+Important keywords in loops to add additional functionality for various cases:
+
+- `break`: Breaks out of the current closest enclosing loop.
+- `continue`: Goes to the top of the current closest enclosing loop.
+- `pass`: does nothing at all.
+
+## 3.4. Useful Operators
+
+The operators are (see notebooks):
+
+- `range(start, stop, step)`
+- `enumerate(iterable)`: The enumerate object yields pairs containing a count (from start, which defaults to zero) and a value yielded by the iterable argument.
+- `zip(*iterables)` --> A zip object yielding tuples until an input is exhausted.
+- `in`: check if item is in iterable, e.g. `'x' in 'xyz' --> True`.
+- `min(iterable)` and `max()` to find smallest and largest item in an iterable.
+
+To import functions from a library we use the following syntax:
+
+```python
+from library import function
+```
+
+## 3.5. List Comprehesion
+
+List Comprehensions are a unique way of quickly creating a list with Python. If you find yourself using a `for` loop along with `.append()` to create a list, List Comprehensions are a good alternative! We flatten the `for` loop, e.g.:
+
+```python
+[x**2 for x in range(0,11) if x%2 == 0]
+```
+
+Makes a list of squared numbers from 0 to (excluding) 11, iff the number is even.
+
+# 4. Methods and Functions
+
+Continue here!
