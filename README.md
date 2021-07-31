@@ -29,8 +29,10 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [3.2. For Loops (and Tuple Unpacking)](#32-for-loops-and-tuple-unpacking)
   - [3.3. While Loop](#33-while-loop)
   - [3.4. Useful Operators](#34-useful-operators)
-  - [3.5. List Comprehesion](#35-list-comprehesion)
+  - [3.5. List Comprehension](#35-list-comprehension)
 - [4. Methods and Functions](#4-methods-and-functions)
+  - [4.1. def Keyword](#41-def-keyword)
+  - [4.2. Basics of Python Functions](#42-basics-of-python-functions)
 
 # 1. Overview and Introduction
 
@@ -342,7 +344,7 @@ To import functions from a library we use the following syntax:
 from library import function
 ```
 
-## 3.5. List Comprehesion
+## 3.5. List Comprehension
 
 List Comprehensions are a unique way of quickly creating a list with Python. If you find yourself using a `for` loop along with `.append()` to create a list, List Comprehensions are a good alternative! We flatten the `for` loop, e.g.:
 
@@ -350,8 +352,70 @@ List Comprehensions are a unique way of quickly creating a list with Python. If 
 [x**2 for x in range(0,11) if x%2 == 0]
 ```
 
+```python
+[a for i in items if C]
+
+```
+
+```python
+[a if C else b for i in items]
+
+```
 Makes a list of squared numbers from 0 to (excluding) 11, iff the number is even.
 
 # 4. Methods and Functions
 
-Continue here!
+Creating clean repeatable code is a key part of becoming an effective programmer. **Functions** allow us to create blocks of code that can be easily executed many times, without needing to constantly rewrite the entire block of code. Tips to learn about functions in Python:
+
+- Be patient with yourself.
+- Take your time to practice the material.
+- Start getting excited about your newskills and start thinking about personal projects.
+
+## 4.1. def Keyword
+
+Creating a function requires a very specific syntax, including the def keyword, correct indentation, and b proper structure. Basic syntax:
+
+```python
+# the convention is to use snake casing for functions
+def print_hello():
+  '''
+  Docstring explains function
+  '''
+  # code to be executed when the function is called
+  print('Hello!')
+```
+
+```python
+def print_hello_w_name(name):
+  '''
+  Docstring explains function
+  '''
+  # code to be executed when the function is called
+  print('Hello!' + name)
+```
+
+
+
+```python
+def print_hello_w_name(name):
+  '''
+  Docstring explains function
+  '''
+  # code to be executed when the function is called
+  print('Hello!' + name)
+```
+
+Typically we use the `return` keyword to send back the result of the function, instead of just printing it out. `return` allows us to assign the output of the function to a new variable.
+
+```python
+def add_numbers(num1,num2)
+  '''
+  Docstring explains function
+  '''
+  return num1 + num2
+  # return allows to save the result to a variable
+```
+
+## 4.2. Basics of Python Functions
+
+[Solution links](https://docs.google.com/document/d/181AMuP-V5VnSorl_q7p6BYd8mwXWBnsZY_sSPA8trfc/edit).
