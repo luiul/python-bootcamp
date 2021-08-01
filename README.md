@@ -33,6 +33,9 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
 - [4. Methods and Functions](#4-methods-and-functions)
   - [4.1. def Keyword](#41-def-keyword)
   - [4.2. Basics of Python Functions](#42-basics-of-python-functions)
+  - [4.3. Lambda Expressions Map and Filter](#43-lambda-expressions-map-and-filter)
+  - [4.4. Nested Statements and Scope: LEGB Rule](#44-nested-statements-and-scope-legb-rule)
+- [5. Milestone Project 1](#5-milestone-project-1)
 
 # 1. Overview and Introduction
 
@@ -361,6 +364,7 @@ List Comprehensions are a unique way of quickly creating a list with Python. If 
 [a if C else b for i in items]
 
 ```
+
 Makes a list of squared numbers from 0 to (excluding) 11, iff the number is even.
 
 # 4. Methods and Functions
@@ -394,8 +398,6 @@ def print_hello_w_name(name):
   print('Hello!' + name)
 ```
 
-
-
 ```python
 def print_hello_w_name(name):
   '''
@@ -419,3 +421,20 @@ def add_numbers(num1,num2)
 ## 4.2. Basics of Python Functions
 
 [Solution links](https://docs.google.com/document/d/181AMuP-V5VnSorl_q7p6BYd8mwXWBnsZY_sSPA8trfc/edit).
+
+## 4.3. Lambda Expressions Map and Filter
+
+We usually use lambda expression in conjunctions with the built-in `map` and `filter` functions. Use the `map` function if we compute something with the items of an iterable. Use the `filter` function if the function yields a boolean value baed on the item of the iterable.
+
+## 4.4. Nested Statements and Scope: LEGB Rule
+
+[Python scopes](https://realpython.com/python-scope-legb-rule/):
+
+- L: Local — Names assigned in any way within a function (def or lambda), and not declared global in that function.
+- E: Enclosing function locals — Names in the local scope of any and all enclosing functions (def or lambda), from inner to outer.
+- G: Global (module) — Names assigned at the top-level of a module file, or declared global in a def within the file.
+- B: Built-in (Python) — Names preassigned in the built-in names module : open, range, SyntaxError,...
+
+# 5. Milestone Project 1
+
+Start here!
