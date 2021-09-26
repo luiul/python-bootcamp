@@ -36,6 +36,8 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [4.3. Lambda Expressions Map and Filter](#43-lambda-expressions-map-and-filter)
   - [4.4. Nested Statements and Scope: LEGB Rule](#44-nested-statements-and-scope-legb-rule)
 - [5. Milestone Project 1](#5-milestone-project-1)
+- [6. Object Oriented Programming](#6-object-oriented-programming)
+- [7. Misc](#7-misc)
 
 # 1. Overview and Introduction
 
@@ -437,4 +439,53 @@ We usually use lambda expression in conjunctions with the built-in `map` and `fi
 
 # 5. Milestone Project 1
 
-Start here!
+Preparation for the Milestone Project:
+
+- Grab user input
+- Manipulate a variable based on input
+- Return back adjusted variable
+
+Most programs that are interactive work on this very simple idea.
+
+- Display something visual to the user
+- Let the user update through an interaction
+- Update variables in the program
+- Display updated visual
+
+Simple Interaction. We write a program that will:
+
+- Display a list
+- Have a user choose an index position and an input value
+- Replace value at index position with user's chosen input value
+
+Project scope. What needs to happen?
+
+- We need to print a boar
+- Take in player inpu
+- Place their input on the boar
+- Check if the game is won,tied, lost, or ongoin
+- Repeat c and d until the game has been won or tie
+- Ask if players want to play again.
+
+# 6. Object Oriented Programming
+
+Object Oriented Programming (OOP) allows programmers to create their own **objects** that have **methods** and **attributes**. Recall that after defining a string, list, dictionary, or other objects, you were able to call methods off of them with the `.method_name()` syntax.
+
+These methods act as functions that use information about the object, as well as the object itself to return results, or change the current object.
+
+In general, OOP allows us to create code that is **repeatable** and **organized**. Syntax:
+
+```python
+class NameOfClass(): 
+  def __init__(self, param): 
+    self.param = param
+
+  def some_method(self): 
+    print(self.param)
+```
+
+A class is a user defined object; it is a blueprint that defines the nature of a future object. An instance is a specific object created from a particular class.
+
+# 7. Misc
+
+- https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
