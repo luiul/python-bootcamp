@@ -37,6 +37,7 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [4.4. Nested Statements and Scope: LEGB Rule](#44-nested-statements-and-scope-legb-rule)
 - [5. Milestone Project 1](#5-milestone-project-1)
 - [6. Object Oriented Programming](#6-object-oriented-programming)
+- [Modules and Packages](#modules-and-packages)
 - [7. Misc](#7-misc)
 
 # 1. Overview and Introduction
@@ -476,15 +477,33 @@ These methods act as functions that use information about the object, as well as
 In general, OOP allows us to create code that is **repeatable** and **organized**. Syntax:
 
 ```python
-class NameOfClass(): 
-  def __init__(self, param): 
+class NameOfClass():
+  def __init__(self, param):
     self.param = param
 
-  def some_method(self): 
+  def some_method(self):
     print(self.param)
 ```
 
 A class is a user defined object; it is a blueprint that defines the nature of a future object. An instance is a specific object created from a particular class.
+
+# Modules and Packages
+
+PyPI is a repository for open-source third-party Python packages. It's similar to RubyCems in the Ruby world, PHP's Packagist, CPAN for Perl, and NPM for Node.js. Syntax and example with Conda:
+
+```zsh
+conda install colorama
+python
+>>> from colorama import init
+>>> init()
+>>> from colorama import Fore
+>>> print(Fore.RED + "some red text")
+some red text
+>>> print(Fore.GREEN + "switch to green")
+switch to green
+```
+
+Now that we understand how to install external packages, let's explore how to create our own modules and packages. **Modules** are just `.py` (external) scripts that you call in another `.py` script. **Packages** are a collection of modules.
 
 # 7. Misc
 
