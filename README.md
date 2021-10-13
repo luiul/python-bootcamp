@@ -37,8 +37,9 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [4.4. Nested Statements and Scope: LEGB Rule](#44-nested-statements-and-scope-legb-rule)
 - [5. Milestone Project 1](#5-milestone-project-1)
 - [6. Object Oriented Programming](#6-object-oriented-programming)
-- [Modules and Packages](#modules-and-packages)
-- [7. Misc](#7-misc)
+- [7. Modules and Packages](#7-modules-and-packages)
+- [8. Errors and Exceptions Handling](#8-errors-and-exceptions-handling)
+- [9. Misc](#9-misc)
 
 # 1. Overview and Introduction
 
@@ -487,7 +488,7 @@ class NameOfClass():
 
 A class is a user defined object; it is a blueprint that defines the nature of a future object. An instance is a specific object created from a particular class.
 
-# Modules and Packages
+# 7. Modules and Packages
 
 PyPI is a repository for open-source third-party Python packages. It's similar to RubyCems in the Ruby world, PHP's Packagist, CPAN for Perl, and NPM for Node.js. Syntax and example with Conda:
 
@@ -503,8 +504,63 @@ some red text
 switch to green
 ```
 
-Now that we understand how to install external packages, let's explore how to create our own modules and packages. **Modules** are just `.py` (external) scripts that you call in another `.py` script. **Packages** are a collection of modules.
+Now that we understand how to install external packages, let's explore how to create our own modules and packages. **Modules** are just `.py` (external) scripts that you call in another `.py` script. **Packages** are a collection of modules. Syntax:
 
-# 7. Misc
+```python
+from <package>.<subpackage>.<module> import <function>
+function()
+# function is directly accessible
+```
 
-- https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
+An often confusing part of Python is a mysterious line of code:
+
+```python
+if __name__ = "__main__":
+  <block of code>
+```
+
+Sometimes when you are **importing from a module**, you would like to know whether a modules function is being used as an import, or if you are using the original `.py` file of that module. Example:
+
+```python
+# classes and functions
+def foo(): 
+    pass
+
+def bar(): 
+    pass 
+
+# __name__ is assigned the value "__main__" when running the code directly
+if __name__ == "__main__": 
+  # run the script (logic)
+  foo()
+  bar()
+```
+
+# 8. Errors and Exceptions Handling
+
+Errors are bound to happen in your code! Especially when someone else ends up using it in an unexpected way. We can use error handling to attempt to plan for possible errors.
+
+Currently if there is any type of error in your code, the entire script will stop. We can use **Error Handling** to let the script continue with other code, even if there is an error. Keywords:
+
+- **try**: This is the block of code to be attempted (may lead to an error)
+- **except**: Block of code will execute in case there is an error in try block
+- **finally**: A final block of code to be executed, regardless of an error.
+
+Syntax:
+
+```python
+try: 
+  # want to attempt this code but it may have an error
+except: 
+  # execute code if try block returns an error
+else:
+  # execute code if try block doesn't return an error
+finally: 
+  # always executes
+```
+
+[Documentation](https://docs.python.org/3/tutorial/errors.html) on Error and Exceptions. [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions).
+
+# 9. Misc
+
+- <https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign>
