@@ -29,7 +29,8 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
   - [3.2. For Loops (and Tuple Unpacking)](#32-for-loops-and-tuple-unpacking)
   - [3.3. While Loop](#33-while-loop)
   - [3.4. Useful Operators](#34-useful-operators)
-  - [3.5. List Comprehension](#35-list-comprehension)
+  - [3.5. Remarks on Looping](#35-remarks-on-looping)
+  - [3.6. List Comprehension](#36-list-comprehension)
 - [4. Methods and Functions](#4-methods-and-functions)
   - [4.1. def Keyword](#41-def-keyword)
   - [4.2. Basics of Python Functions](#42-basics-of-python-functions)
@@ -39,7 +40,9 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
 - [6. Object Oriented Programming](#6-object-oriented-programming)
 - [7. Modules and Packages](#7-modules-and-packages)
 - [8. Errors and Exceptions Handling](#8-errors-and-exceptions-handling)
-- [9. Misc](#9-misc)
+- [9. Pylint and Unit Test](#9-pylint-and-unit-test)
+- [10. Milestone Project (OOP)](#10-milestone-project-oop)
+- [11. Misc](#11-misc)
 
 # 1. Overview and Introduction
 
@@ -349,9 +352,40 @@ To import functions from a library we use the following syntax:
 
 ```python
 from library import function
+
 ```
 
-## 3.5. List Comprehension
+## 3.5. Remarks on Looping
+
+See [documentation](https://docs.python.org/3/library/collections.abc.html).
+
+[Iterators, Iterables, and Itertools](https://www.youtube.com/watch?v=WR7mO_jYN9g):
+
+```python
+for x in something:
+  pass
+# something is an iterable, e.g. list
+# the process of looping over the elements is called iterating
+```
+
+Iterables:
+
+- Sequence = Iterable + Ordered (common sequences: lists, tuples, strings, bytes)
+
+`Iterable` with the abstract method  `__iter__`
+`Iterator` inherits from `Iterable` with the abstract method `__next__`
+
+```python
+container.__iter__():
+  Return an iterator object.
+
+iterator.__next__():
+  Return the next item form the container
+  If there are no further items, raise the StopIteration exception.
+```
+
+
+## 3.6. List Comprehension
 
 List Comprehensions are a unique way of quickly creating a list with Python. If you find yourself using a `for` loop along with `.append()` to create a list, List Comprehensions are a good alternative! We flatten the `for` loop, e.g.:
 
@@ -523,14 +557,14 @@ Sometimes when you are **importing from a module**, you would like to know wheth
 
 ```python
 # classes and functions
-def foo(): 
+def foo():
     pass
 
-def bar(): 
-    pass 
+def bar():
+    pass
 
 # __name__ is assigned the value "__main__" when running the code directly
-if __name__ == "__main__": 
+if __name__ == "__main__":
   # run the script (logic)
   foo()
   bar()
@@ -549,18 +583,36 @@ Currently if there is any type of error in your code, the entire script will sto
 Syntax:
 
 ```python
-try: 
+try:
   # want to attempt this code but it may have an error
-except: 
+except:
   # execute code if try block returns an error
 else:
   # execute code if try block doesn't return an error
-finally: 
+finally:
   # always executes
 ```
 
+# 9. Pylint and Unit Test
+
+As you begin to expand to larger multi-file projects it becomes important to have tests in place. This way as you make changes or update to your code, you can run your test files to make sure previous code still runs as expected.
+
+There are several testing tools, we will focus on two:
+
+- **pylint**: This is a library that looks at your code and reports back possible issues.
+- **unittest**: This built-in library will allow to test your own programs and check you are getting desired outputs.
+
+```python
+pylint myexample.py -ry
+```
+
+# 10. Milestone Project (OOP)
+
+Start project here!
+
+
 [Documentation](https://docs.python.org/3/tutorial/errors.html) on Error and Exceptions. [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions).
 
-# 9. Misc
+# 11. Misc
 
 - <https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign>
