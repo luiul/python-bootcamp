@@ -41,8 +41,9 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
 - [7. Modules and Packages](#7-modules-and-packages)
 - [8. Errors and Exceptions Handling](#8-errors-and-exceptions-handling)
 - [9. Pylint and Unit Test](#9-pylint-and-unit-test)
-- [10. Milestone Project (OOP)](#10-milestone-project-oop)
+- [10. Milestone Project 2 (OOP)](#10-milestone-project-2-oop)
 - [11. Misc](#11-misc)
+- [12. Notes from Revision](#12-notes-from-revision)
 
 # 1. Overview and Introduction
 
@@ -606,13 +607,46 @@ There are several testing tools, we will focus on two:
 pylint myexample.py -ry
 ```
 
-# 10. Milestone Project (OOP)
-
-Start project here!
-
+# 10. Milestone Project 2 (OOP)
 
 [Documentation](https://docs.python.org/3/tutorial/errors.html) on Error and Exceptions. [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html#bltin-exceptions).
+
+We make the:
+
+- Card class
+- Deck class
+  - Instantiate a new deck
+    - Create all Card objects
+    - Hold as a list of Card objects
+  - Shuffle a Deck though a method call
+  - Deal cards from the Deck object
+- Player Class
+  - Hold player's current list of cards
+  - A player should be able to add (single or multiple) or remove cards from their hand
+
+Note that the Deck class holds a list of Card objects. This means the Deck class will return Card class object instances, not just normal python data types.
+
+Game logic:
+
+```python
+player_one = Player('One')
+player_two = Player('Two')
+
+new_deck = Deck()
+new_deck.shuffle()
+
+pas
+
+```
+
 
 # 11. Misc
 
 - <https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign>
+
+# 12. Notes from Revision
+
+- [W3 Python Reference](https://www.w3schools.com/python/python_reference.asp)
+
+- There are around 71 built-in functions in Python v3.10.1. See [trytoprogram](http://www.trytoprogram.com/python-programming/python-built-in-functions/)(simplied) or [documentation](https://docs.python.org/3/library/functions.html#abs).
+- List methods: see [W3](https://www.w3schools.com/python/python_ref_list.asp).
