@@ -42,6 +42,9 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
 - [8. Errors and Exceptions Handling](#8-errors-and-exceptions-handling)
 - [9. Pylint and Unit Test](#9-pylint-and-unit-test)
 - [10. Milestone Project 2 (OOP)](#10-milestone-project-2-oop)
+- [Decorators](#decorators)
+- [Generators](#generators)
+- [Advanced Python Modules](#advanced-python-modules)
 - [11. Misc](#11-misc)
 - [12. Notes from Revision](#12-notes-from-revision)
 
@@ -626,18 +629,106 @@ We make the:
 
 Note that the Deck class holds a list of Card objects. This means the Deck class will return Card class object instances, not just normal python data types.
 
-Game logic:
+# Decorators
+
+Wrap function with new functionality / add functionality to an existing code. Without using the `@` operator:
 
 ```python
-player_one = Player('One')
-player_two = Player('Two')
+def func():
+  print("Please wrap me!")
 
-new_deck = Deck()
-new_deck.shuffle()
+def wrapper(func):
+  def wrapped_func():
+    print("Additional functionality before the function")
+    func()
+    print("Additional functionality after the function")
 
-pas
+  return wrapped_func
 
+new_func = wrapper(func)
+new_func()
 ```
+
+This becomes:
+
+```python
+def wrapper(func):
+    def wrapped_func():
+        print('Additional functionality before core func')
+        func()
+        print('Additional functionality after core func')
+
+    return wrapped_func
+
+@wrapper
+def func():
+    print('Core func')
+
+func()
+```
+
+# Generators
+
+Generator function allows us to write a function that can send back a value and then alter resume to pick up where it left off.
+
+**Motivation**: If the output has the potential of taking up a large amount of memory and you only intend to iterate through it, you would want to use a generator.
+
+
+Example:
+
+```python
+def create_cubes(N):
+    cubes = []
+    for n in range(N):
+        cubes.append(n**3)
+    return cubes
+```
+
+This can be written as a (more memory efficient) generator.
+
+```python
+def create_cubes(N):
+    for n in range(N):
+        yield n**3
+```
+
+We can cast the generator into a list if we need the values in memory. Another example:
+
+```python
+def fib(N):
+    c = 0
+    n = 1
+
+    for i in range(N):
+        yield c
+        c, n = n, c+n
+```
+
+We can use the `next()` function to call the next element in the generator. Example:
+
+```python
+def gen():
+    for i in range(3):
+        yield i
+
+g = gen()
+next(g)
+```
+
+At the end of the generator the next function throws a `StopIteration` exception. We can also do generator comprehension. The relevant elements of the iterable are not stored in memory, but yielded as necessary.
+
+```py
+L = [1,2,3,4,5]
+
+gencomp = (i for i in L if i > 3)
+
+for item in gencomp:
+    print(item)
+```
+
+# Advanced Python Modules
+
+Continue here!
 
 
 # 11. Misc
