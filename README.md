@@ -42,11 +42,12 @@ Learn how to use Python for real-world tasks, such as working with PDF files, se
 - [8. Errors and Exceptions Handling](#8-errors-and-exceptions-handling)
 - [9. Pylint and Unit Test](#9-pylint-and-unit-test)
 - [10. Milestone Project 2 (OOP)](#10-milestone-project-2-oop)
-- [Decorators](#decorators)
-- [Generators](#generators)
-- [Advanced Python Modules](#advanced-python-modules)
-- [11. Misc](#11-misc)
-- [12. Notes from Revision](#12-notes-from-revision)
+- [11. Decorators](#11-decorators)
+- [12. Generators](#12-generators)
+- [13. Advanced Python Modules](#13-advanced-python-modules)
+- [14. Web Scraping](#14-web-scraping)
+- [15. Misc](#15-misc)
+- [16. Notes from Revision](#16-notes-from-revision)
 
 # 1. Overview and Introduction
 
@@ -629,7 +630,7 @@ We make the:
 
 Note that the Deck class holds a list of Card objects. This means the Deck class will return Card class object instances, not just normal python data types.
 
-# Decorators
+# 11. Decorators
 
 Wrap function with new functionality / add functionality to an existing code. Without using the `@` operator:
 
@@ -667,7 +668,7 @@ def func():
 func()
 ```
 
-# Generators
+# 12. Generators
 
 Generator function allows us to write a function that can send back a value and then alter resume to pick up where it left off.
 
@@ -726,16 +727,31 @@ for item in gencomp:
     print(item)
 ```
 
-# Advanced Python Modules
+# 13. Advanced Python Modules
+
+Modules covered:
+
+- Collections
+  - Counter
+  - Default Dictionary
+  - Named Tuple
+- Shutil and OS module
+- Datetime
+- Math and Random
+- Python Debugger
+- Timeit
+- Regular Expressions
+- Unzipping and Zipping modules
+
+# 14. Web Scraping
 
 Continue here!
 
-
-# 11. Misc
+# 15. Misc
 
 - <https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign>
 
-# 12. Notes from Revision
+# 16. Notes from Revision
 
 - [W3 Python Reference](https://www.w3schools.com/python/python_reference.asp)
 
